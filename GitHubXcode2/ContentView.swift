@@ -13,26 +13,49 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 Spacer()
-                Text("Hello GitHub!")
-                    .font(.largeTitle)
-                Spacer()
-                Button(action: {
-                    
-                }) {
-                    HStack {
-                        Image(systemName: "heart.fill")
-                        Text("Like")
-                    }
-                    .frame(width: 350, height: 50)
-                    .background(Color.blue)
-                    .cornerRadius(15)
-                    .foregroundColor(.white)
+                VStack {
+                    Text("Welcome to GitHub")
+                    Text("@bagusisgood")
+                        .font(.largeTitle)
                 }
-                .buttonStyle(PlainButtonStyle())
+                
+                Spacer()
+                HStack {
+                    Button(action: {
+                        
+                    }) {
+                        HStack {
+                            Image(systemName: "heart.fill")
+                            Text("Like")
+                        }
+                        .frame(width: 150, height: 50)
+                        .background(Color.red)
+                        .cornerRadius(15)
+                        .foregroundColor(.white)
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        
+                    }) {
+                        HStack {
+                            Image(systemName: "plus")
+                            Text("Add Post")
+                        }
+                        .frame(width: 150, height: 50)
+                        .background(Color.blue)
+                        .cornerRadius(15)
+                        .foregroundColor(.white)
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                }
                 
                 
             }
-            .navigationBarTitle(Text("Good GitHub"))
+            .padding()
+            .navigationBarTitle(Text("Good GitHub 1.1"))
         }
     }
 }
