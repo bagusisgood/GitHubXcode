@@ -10,7 +10,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            VStack {
+                Spacer()
+                Text("Hello GitHub!")
+                    .font(.largeTitle)
+                Spacer()
+                Button(action: {
+                    
+                }) {
+                    HStack {
+                        Image(systemName: "heart.fill")
+                        Text("Like")
+                    }
+                    .frame(width: 350, height: 50)
+                    .background(Color.blue)
+                    .cornerRadius(15)
+                    .foregroundColor(.white)
+                }
+                .buttonStyle(PlainButtonStyle())
+                
+                
+            }
+            .navigationBarTitle(Text("Good GitHub"))
+        }
     }
 }
 
